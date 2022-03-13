@@ -1,4 +1,66 @@
 body {
+    margin: 0;
+    padding: 0;
     display: flex;
     flex-direction: column;
 }
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+button {
+    color: #3882f6;
+}
+
+.navigation {
+    display: flex;
+    gap: 24px;
+}
+
+.container {
+    width: 70%;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-bottom: 50px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.section-1,
+.footer {
+    background-color: #1f2937;
+}
+
+.section-1-content {
+    display: flex;
+}
+
+.main-text {
+    font-size: 48px;
+    font-weight: 900;
+    color: #F9FAF8;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.secondary-text,
+.navigation li {
+    font-size: 18px;
+    color: #E5E7Eb;
+}
+
+.left-side {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 50%;
+}
+
