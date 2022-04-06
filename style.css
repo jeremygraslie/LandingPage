@@ -18,6 +18,11 @@ button {
     padding: 12px;
 }
 
+figcaption cite {
+    display: flex;
+    justify-content: right;
+}
+
 .navigation {
     display: flex;
     gap: 24px;
@@ -27,7 +32,7 @@ button {
     width: 70%;
     padding-left: 15%;
     padding-right: 15%;
-    padding-bottom: 50px;
+    padding-bottom: 100px;
 }
 
 .header {
@@ -38,12 +43,10 @@ button {
     padding-bottom: 24px;
 }
 
-.header-photo {
-    max-height: 50px;
-}
-
-.content-photo {
-    max-width: 50%;
+.header p,
+.right-side p {
+    color: #F9FAF8;
+    font-weight: 700;
 }
 
 .section-1,
@@ -71,17 +74,52 @@ button {
 
 .left-side {
     display: flex;
+    flex: 1;
     flex-direction: column;
     align-items: flex-start;
 }
 
-.section-2-text {
+.right-side {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    background-color: grey;
+}
+
+.section-2-text p {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 900;
+    font-weight: 900;
+    font-size: 36px;
     color: #1f2937;
     padding-top: 20px;
+}
+
+.section-3 {
+    background-color: #E5E7Eb;
+}
+
+.section-4 {
+    display: flex;
+}
+
+
+/* .section-4 .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+.section-4-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3882f6;
+    border-radius: 10px;
+    padding: 25px;
+    margin-top: 50px;
 }
 
 .box-group {
@@ -101,10 +139,26 @@ button {
 
 .box img {
     border-radius: 25px;
-    border: 2px solid blue;
+    border: 4px solid blue;
     padding: 50px;
+    height: 75px;
+    width: 75px;
+    flex: 1;
 }
 
 .box p {
     text-align: center;
+}
+
+.quote p {
+    font-size: 36px;
+    font-weight: lighter;
+}
+
+.footer {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#F9FAF8;
 }
